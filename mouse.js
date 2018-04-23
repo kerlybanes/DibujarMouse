@@ -75,6 +75,13 @@ function colorCafe()
 	color = "brown"
 }
 
+var botonLimpiar = document.getElementById("btLimpiar");//getElementById - obtener un elemento a partir de su ID
+botonLimpiar.addEventListener("click", limpiaLienzo);//addEventListener - escuchador de eventos
+function limpiaLienzo()
+{
+	cuadrito.width = cuadrito.width;
+}
+
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 {
 	lienzo.beginPath();//beginPath - iniciar la ruta
